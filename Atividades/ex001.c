@@ -1,27 +1,40 @@
 #include <stdio.h>
-int main()
-{
-   int idade;
-   int sexo;
-   int somaM = 0;
-   int somaF = 0;
-   int cont = 0;
-   float somaIdade=0;
-   while(cont < 10){
-       printf("Entre com a idade do morador: \n");
-       scanf("%d",&idade);
-       somaIdade=somaIdade+idade;
-       printf("Entre com o sexo 1 para feminino e 2 para masculino:");
-       scanf("%d",&sexo);
-       if(sexo == 1){ somaF=somaF+1;}
-       else if(sexo == 2){somaM=somaM+1;}
-       else{printf("Sexo nÃ£o cadastrado...");
-       somaIdade=somaIdade-idade;
-       cont--;
-       }
-       cont=cont+1;
-   }
-   printf("A mÃ©dia das idade Ã©: %.2f \n", somaIdade/10);
-   printf("A quantidade de mulheres Ã©: %d \n",somaF);
-   printf("A quantidade de homens Ã©: %d \n",somaM);
+#include <stdlib.h>
+#include <locale.h>
+
+void main(){
+	
+	//Permite usar acentos
+	setlocale(LC_ALL,"");
+	
+	//Imprime Olá
+	printf("Olá \n");
+	
+	//Lendo valor inteiro
+	int a = 50;
+	printf("O valor de <a> é = %d \n", a);
+	// <&> Endereço da memória
+	printf("Digite um número: \n");
+	scanf("%d", &a);
+	printf("O valor de <a> mudou para %d \n", a);
+	
+	//Lendo valor quebrado
+	float b = 5.5;
+	printf("O valor de <b> é = %f \n", b);
+	printf("Digite um número: \n");
+	scanf("%f", &b);
+	printf("O valor de <b> mudou para %2.f \n", b);
+	
+	
+	
+	//Lendo letra
+	char letra = 't';
+	printf("O valor de <c> é = %c \n", letra);
+	printf("Digite uma letra: \n");
+	//Antes de ler valores para char limpe o buffer
+	fflush(stdin);
+	scanf("%c", &letra);
+	printf("O valor de <c> mudou para %c", letra);
+	
+	
 }
