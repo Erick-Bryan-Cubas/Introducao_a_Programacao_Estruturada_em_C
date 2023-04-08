@@ -25,16 +25,16 @@ int main(){
 	printf("\n Digite o segundo operador: ");
 	scanf("%f", &operador_2);
 	
-	printf("\n Qual operação matemática deseja aplicar? \n"
+	printf("\n Qual opera??o matem?tica deseja aplicar? \n"
 	" 1 - Somar, \n 2- Subtrair, \n 3 - Dividir, \n 4 - Multiplicar \n");
 	scanf("%d", &operacao);
 	
 	switch(operacao){
 		case 1:
-			printf("O usuário realizou a <SOMA> entre os operadores, sendo o resultado: %5.2f", operador_1 + operador_2);
+			printf("O usu?rio realizou a <SOMA> entre os operadores, sendo o resultado: %5.2f", operador_1 + operador_2);
 			break;
 		case 2:
-			printf("O usuário realizou a <SUBTRAÇÃO> entre os operadores, sendo o resultado: %5.2f", operador_1 - operador_2);
+			printf("O usu?rio realizou a <SUBTRAÇÃO> entre os operadores, sendo o resultado: %5.2f", operador_1 - operador_2);
 			break;
 			
 		case 3:
@@ -42,7 +42,7 @@ int main(){
 			break;
 		
 		case 4:
-			printf("O usuário realizou a <MULTIPLICAÇÃO> entre os operadores, sendo o resultado: %5.2f", operador_1 * operador_2);
+			printf("O usu?rio realizou a <MULTIPLICAÇÃO> entre os operadores, sendo o resultado: %5.2f", operador_1 * operador_2);
 			break;
 		
 		default:
