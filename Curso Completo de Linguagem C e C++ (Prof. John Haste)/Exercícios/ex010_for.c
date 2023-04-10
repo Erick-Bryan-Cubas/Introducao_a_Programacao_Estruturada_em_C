@@ -10,7 +10,7 @@ void main (){
 
     float vetor[tamanho], soma;
     int i;
-    for(i = 0; i < tamanho; i++){
+    for(i = 0; i < tamanho; i++){ 
         printf("Digite um valor:");
         scanf("%f", &vetor[i]);
         soma+=vetor[i];
