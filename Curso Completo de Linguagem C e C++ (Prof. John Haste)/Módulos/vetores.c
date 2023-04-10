@@ -21,7 +21,6 @@ int main(){
         vetor[cont] =  vetor[cont] + 1;
     }
 
-
     // Exibindo os valores do vetor
     printf("\n Posição 0: %d", vetor[0] );
     printf("\n Posição 1: %d", vetor[1] );
@@ -29,8 +28,20 @@ int main(){
 
     // Imprimindo vetor em um laço de repetição
     for(cont = 0; cont < 3; cont++){
+        printf("\n Posição %d : %d \n", cont, vetor[cont] );
+    }
+
+    // Lendo 3 valores para o valor
+    for(cont = 0; cont < TAM; cont++){
+        scanf("%d", &vetor[cont]);
+    }
+
+    // Imprimindo vetor em um laço de repetição
+    for(cont = 0; cont < 3; cont++){
         printf("\n Posição %d : %d", cont, vetor[cont] );
     }
+
+
 return 0;
 
 }

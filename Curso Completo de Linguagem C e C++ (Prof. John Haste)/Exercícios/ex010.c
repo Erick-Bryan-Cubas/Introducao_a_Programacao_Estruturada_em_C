@@ -2,20 +2,27 @@
 #include<stdlib.h>
 #include<locale.h>
 #include<windows.h>
-#define BR 3
 
 int main(){
     //Para usar acentos
-    setlocate(LC_ALL, "");
+    setlocale(LC_ALL, "");
     //Para titular o programa
-    SetConsoleTitle("EXERC√çCIO 10");
+    SetConsoleTitle("EXERCÕCIO 10");
 
     //Enunciado
-    printf("Crie um  algoritmo que leia 3 valores para um vetor de 3 posi√ß√µes"
-    " e depois calcule a m√©dia dos valores acessando o vetor");
+    printf("Crie um  algoritmo que leia 3 valores para um vetor de 3 posiÁıes e depois calcule a mÈdia dos valores acessando o vetor \n");
 
-    int vetor[BR], i;
-    
+    float vetor[3];
+    printf("Digite um valor:");
+    scanf("%f", &vetor[0]);
+    printf("Digite um valor:");
+    scanf("%f", &vetor[1]);
+    printf("Digite um valor:");
+    scanf("%f", &vetor[2]);
+    printf("\n vetor[0] = %.2f", vetor[0]);
+    printf("\n vetor[1] = %.2f", vetor[1]);
+    printf("\n vetor[2] = %.2f", vetor[2]);
+    printf("\n A mÈdia dos valores È: %.2f", (vetor[0],+vetor[1], vetor[2]/3));
 
 return 0;
 
