@@ -1,0 +1,1 @@
+/* Crie um algoritmo que imprima os números pares de 10 a 20 (usando While, Do While ou For) */
