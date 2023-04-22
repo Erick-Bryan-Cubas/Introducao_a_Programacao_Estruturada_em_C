@@ -8,14 +8,14 @@ using namespace std;
  
 int main(){
  
-    //VariÃ¡vel
+    //Variável
     int a = 20;
  
     //Imprimindo o valor de uma variável
     printf("Valor de a: %d \n", a);
  
      //Imprimindo o endereço de uma variável
-    printf("EndereÃ§o de a: %d \n", &a);
+    printf("Endereço de a: %d \n", &a);
  
     //VARIÁVEIS ARMAZENAM VALORES
     int b = 10;
