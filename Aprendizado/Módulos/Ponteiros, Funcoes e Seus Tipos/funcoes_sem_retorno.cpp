@@ -1,22 +1,27 @@
 #include <stdio.h>
 #include <stdlib.h>
- 
-//FunÃ§Ã£o que desenha borda
-void desenhaBorda(){
-     printf("|----| \n");
+#include <locale.h>
+
+
+// Definindo a função
+void funcao(){
+    printf("----- \n");
 }
- 
- 
+
 int main(){
- 
-    //Chamando a FunÃ§Ã£o
-    desenhaBorda();
- 
-    //Imprimindo texto na tela
-    printf("hi\n");
- 
-    //Chamando a FunÃ§Ã£o
-    desenhaBorda();
- 
-    return 0;
+
+    setlocale(LC_ALL, " ");
+    
+
+    // Chamando a função
+    funcao();
+
+    printf("Declaramos a função e em seguida a chamamos \n");
+
+    // Chamando a função
+    funcao();
+
+
+return 0;
+
 }

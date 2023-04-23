@@ -22,7 +22,7 @@ int main(){
     //Passando o retorno de uma função para uma variável
     b = retornaQuebrado();
  
-    //Imprimindo valor de a
+    //Imprimindo valor de b
     printf("\n%f", b);
  
     return 0;
