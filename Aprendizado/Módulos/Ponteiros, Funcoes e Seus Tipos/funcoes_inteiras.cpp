@@ -29,7 +29,7 @@ int main(){
 }
  
 //Função que retorna 10
-int retornaDezEImprimeMensagem(){
+int retornaDez(){
     printf("\nOi galera! \n");
     int numero = 10;
     return numero;
