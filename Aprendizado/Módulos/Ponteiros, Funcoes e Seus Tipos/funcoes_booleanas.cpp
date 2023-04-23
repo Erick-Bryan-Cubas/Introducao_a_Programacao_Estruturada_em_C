@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
+// Para trabalhar com valores booleanos adicionamos a biblioteca
 #include <stdbool.h>
  
 bool retornaBooleano(){
-    return true;
+    return false;
 }
  
 int main(){
